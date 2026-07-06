@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Calculator UI</title>
+      
+</head>
+<link rel="stylesheet" href="jscal.css" />
+<script src="jscal.js"></script>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" placeholder="0">
+    <div class="buttons">
+      <div onclick="remove()" class="btn utility">C</div>
+      <div onclick=" backspace()" class="btn utility">DEL</div>
+      <div onclick="display('%')" class="btn utility">%</div>
+      <div onclick="display('/')" class="btn operator">÷</div>
+
+      <div onclick="display(7)"  class="btn">7</div>
+      <div onclick="display(8)" class="btn">8</div>
+      <div onclick="display(9)" class="btn">9</div>
+      <div onclick="display('*')" class="btn operator">×</div>
+
+      <div class="btn" onclick="display(4)">4</div>
+      <div class="btn" onclick="display('5')">5</div>
+      <div class="btn" onclick="display(6)">6</div>
+      <div class="btn operator" onclick="display('-')">−</div>
+
+      <div class="btn" onclick="display(1)">1</div>
+      <div class="btn" onclick="display(2)">2</div>
+      <div class="btn" onclick="display(3)">3</div>
+      <div class="btn operator" onclick="display('+')">+</div>
+
+      <div class="btn" onclick="display('(')">(</div>
+      <div class="btn" onclick="display(0)">0</div>
+      <div class="btn" onclick="display(')')">)</div>
+     
+
+      <div class="btn" onclick="display('.')">.</div>
+      <div class="btn equal" onclick="calc()">=</div>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+    
+    <!-- //     const display = document.getElementById('display');
+    //     function append(char) {
+    //         display.value += char;
+    //     }
+    //     function clearDisplay() {
+    //         display.value = '';
+    //     }
+    //     function calculate() {
+    //         try {
+    //             display.value = eval(display.value.replace(/÷/g, '/').replace(/×/g, '*'));
+    //         } catch {
+    //             display.value = 'Error';
+    //         }
+    //     }
+    //  -->
+<!-- </body>
+</html> -->
